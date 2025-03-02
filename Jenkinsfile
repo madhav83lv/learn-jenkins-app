@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage("w/o docker") {
                 steps {
-                    sh "echo "without docker""
+                    sh 'echo "without docker"'
                 }
         }
         stage("w docker") {
@@ -15,8 +15,8 @@ pipeline {
                 }
             }
             steps {
-                sh "echo "with docker""
-                sh "npm --version"
+                sh 'echo "with docker"'
+                sh 'npm --version'
             }
         }
     }
